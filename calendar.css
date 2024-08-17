@@ -1,0 +1,16 @@
+.calendar {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 20px; 
+    height: 85vh; 
+}
+
+.calendar iframe {
+    width: 80%; 
+    max-width: 700px; 
+    height: 500px; 
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
