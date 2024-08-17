@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/calendar.css">
+        <link rel="stylesheet" href="css/navigationBar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/event.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <title>Event</title>
+    </head>
+
+    <body>
+        <header>
+            <!--top navigation bar-->
+            <div class="navbar">
+              <a href="MainMenu.html" class="logo">Eatopia</a> <!--need insert link-->
+              <ul class="nav-links">
+                <li><a href="">Foods</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Map</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+    
+              <!-- drop down menu for language selection -->
+              <div class="language-menu">
+                    <img src="pictures/language.png" alt="Language Icon" class="language-icon">
+                    <div class="dropdown-menu">
+                        <a href="">English</a>
+                        <a href="">English</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Embed Google Calendar on a web page-->
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKuala_Lumpur&bgcolor=%237986CB&src=Y18wNDAzYzdmNzc0MzY4OWUzMzA3YjYwYjg0Mjg3ODQxNDRlNDdlODRjZjAyNzUxYzhkZGNhZjVmZjVhYTBkZTdmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div id="recentEvent" class="event-container">
+            <h2 class="section-title">Recent Event</h2>
+
+            <div class="event-grid">
+
+                <div class="event-item">
+                    <img src="pictures/tomatina.jpg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Wed, 28 Aug 2024</p>
+                        <h2 class="event-title">La Tomatina</h2>
+                        <p class="event-venue">Buñol, Valencia, Spain</p>
+                        <p class="event-description">La Tomatina is a food festival held annually in Bunol, Spain. Participants hurl tomatoes at each other for the pure enjoyment of it. The festival has been held since 1945. More than 40,000 people attend the event every year.And finally, you’ll need to bring your own tomatoes – around 200!</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <img src="pictures/chicago.jpg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Fri, 6 Sep 2024</p>
+                        <h2 class="event-title">Taste of Chicago</h2>
+                        <p class="event-venue">Illinois, USA</p>
+                        <p class="event-description">Taste of Chicago is an annual food festival held in Chicago, Illinois. The festival features a wide variety of food from local restaurants, as well as live music and entertainment. It is one of the largest and most important food festivals in the United States, attracting more than two million visitors each year.</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <img src="pictures/oktoberfest.jpg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Sat, 21 Sep 2024</p>
+                        <h2 class="event-title">The Munich Oktoberfest</h2>
+                        <p class="event-venue">Munich, Germany</p>
+                        <p class="event-description">The core activity of the Oktoberfest is naturally drinking, especially the special brews provided by the six major local breweries in Bavaria for the festival. The alcohol content of these beers is usually slightly higher than usual. In addition to beer, the festival also includes a wealth of traditional Bavarian food, such as roast pork knuckle, sausages, roast chicken, pretzels, etc. In addition, the festival also features amusement facilities, music performances, traditional dances, etc.</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <img src="pictures/oyster.jpg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Fri, 27 Sep 2024</p>
+                        <h2 class="event-title">Galway International Oyster Festival</h2>
+                        <p class="event-venue">Galway, Ireland</p>
+                        <p class="event-description">
+                            During the festival, visitors can enjoy a variety of fresh oysters and other seafood delicacies, especially high-quality oysters from Galway Bay. Plump oysters, fresh lobsters and delicious salmon, served with potato cakes and coated with traditional Irish cheese, are extremely delicious and have a lasting aftertaste. There are carnival parties, oyster tastings, oyster opening competitions that challenge the Guinness World Record, and grand oyster cocktail parties during the festival.</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <img src="pictures/ramen.jpeg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Thu, 24 Oct 2024</p>
+                        <h2 class="event-title">Tokyo Ramen Festa</h2>
+                        <p class="event-venue">Komazawa, Tokyo, Japan</p>
+                        <p class="event-description">Tokyo Ramen Festa is an annual food festival that celebrates the dish of ramen noodles. In addition to ramen, there are also stalls selling a variety of other Japanese dishes, as well as various drinks and snacks. With so many different options, the Tokyo Ramen Festa is the perfect place to sample some of the best dishes Japanese cuisine has to offer.</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <img src="pictures/chocolate.jpg" class="event-image">
+                    <div class="event-info">
+                        <p class="event-date">Wed, 30 Oct 2024</p>
+                        <h2 class="event-title">Salon du Chocolat</h2>
+                        <p class="event-venue">Paris, France</p>
+                        <p class="event-description">Salon du Chocolat is a food festival that celebrates chocolate in all its forms. Held annually in Paris since 1996, the event has always attracted some of the world’s leading chocolatiers, who come to showcase their latest creations. Visitors can sample hundreds of different types of chocolate and participate in workshops and demonstrations.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul class="footer-ul">
+                            <li><a href="">Main Menu</a></li>
+                            <li><a href="">Foods</a></li>
+                            <li><a href="">Recipes</a></li>
+                            <li><a href="">Map</a></li>
+                            <li><a href="event.html">Event</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <ul class="footer-ul">
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                //Monitors whether an element enters the viewport
+                const observer = new IntersectionObserver((entries) => {
+
+                    //animation for the event container (down -> up)
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, index * 200); 
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, 
+                {
+                    threshold: 0.1 
+                });
+
+                //Elements that enter the viewport at the same time will be displayed one by one
+                const eventItems = document.querySelectorAll('.event-item');
+                eventItems.forEach(item => {
+                    observer.observe(item);
+                });
+            });
+        </script>
+    </body>
+
+</html>

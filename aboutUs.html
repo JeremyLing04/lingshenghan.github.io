@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Eatopia - Explore global cuisine</title>
+
+    
+    <link rel="stylesheet" href="css/navigationBar.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <!--top navigation bar-->
+        <div class="navbar">
+          <a href="MainMenu.html" class="logo">Eatopia</a> <!--need insert link-->
+          <ul class="nav-links">
+            <li><a href="">Foods</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Map</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+
+          <!-- drop down menu for language selection -->
+          <div class="language-menu">
+                <img src="pictures/language.png" alt="Language Icon" class="language-icon">
+                <div class="dropdown-menu">
+                    <a href="">English</a>
+                    <a href="">English</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--about eatopia-->
+        <section id="aboutEatopia">
+            <div class="aboutEatopia-container">
+                <h1 class="aboutEatopia-title">About Eatopia</h1>
+                <p class="subtitle">Explore Global Cuisine </p>
+                <p class="subtitle"><br>&</p>
+                <p class="subtitle"><br><br>Taste World Culture</p>
+            </div>
+        </section>
+
+        <!--logo description-->
+        <section id="logo-description" class="animate-up">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="logo-image">
+                        <img src="pictures/logo.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="our-logo">
+                        <h2>Our Logo</h2>
+                        <p>Combining the words "Eat" and "Utopia", it implies the combination of gourmet food and an ideal world.
+                           It can be understood as a "food utopia" or "food paradise", symbolizing an ideal place where people can enjoy food from all over the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--our mission-->
+        <section id="mission" class="animate-up">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="our-mission">
+                        <h2>Our Mission</h2>
+                        <p>Eatopia is committed to bringing food from around the world to your table, allowing you to experience diverse cultures without leaving your home. Through our platform, 
+                            you can explore new taste experiences, share your culinary creativity, and connect with food lovers around the world.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="mission-image">
+                        <img src="pictures/mission.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--website features-->
+        <section id="features">
+            <h2 class="feature-title">Website Features</h2>
+            <div class="feature-container">
+                <div class="feature-item" id="feature-1">
+                    <div class="feature-content">
+                        <span id="country-count" class="feature-number">0</span>
+                        <p>countries and regions culinary</p>
+                    </div>
+                    <div class="feature-image-country"></div>
+                </div>
+                <div class="feature-item" id="feature-2">
+                    <div class="feature-content">
+                        <span class="feature-number">ELABORATE</span>
+                        <p>recipes authenticated by culinary experts</p>
+                    </div>
+                    <div class="feature-image-professional"></div>
+                </div>
+                <div class="feature-item" id="feature-3">
+                    <div class="feature-content">
+                        <span class="feature-number">SHARE</span>
+                        <p>your proprietary recipes and culinary experiences</p>
+                    </div>
+                    <div class="feature-image-sharing"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--join our community-->
+        <section id="community">
+            <div>
+                <h2>Join Our Community</h2>
+                <p>Explore world cultures through food and embark on a cultural journey across regions!</p>
+                <a href="" class="join"> <!--need insert link-->
+                    <span>START EXPLORE</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--need insert link-->
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul class="footer-ul">
+                        <li><a href="">Main Menu</a></li>
+                        <li><a href="">Foods</a></li>
+                        <li><a href="">Recipes</a></li>
+                        <li><a href="">Map</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul class="footer-ul">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const countElement = document.getElementById('country-count');
+            const featureItems = document.querySelectorAll('.feature-item');
+            const animateUpElements = document.querySelectorAll('.animate-up');
+            const targetCount = 200;
+            let currentCount = 0;
+
+            //animation of features section -- country , count from 0 to 200
+            function updateCount() {
+                if (currentCount < targetCount) {
+                    currentCount++;
+                    countElement.textContent = currentCount + "++";
+                    setTimeout(updateCount, 5);
+                }
+            }
+
+            // Checks if an element is within the viewport
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            //animation of feature section (left -> right)
+            function animateFeatureItems() {
+                featureItems.forEach((item, index) => {
+                    const itemTop = item.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (itemTop < windowHeight * 0.8) {
+                        item.classList.add('animate');
+                    } else {
+                        item.classList.remove('animate');
+                    }
+                });
+            }   
+
+            window.addEventListener('scroll', animateFeatureItems);
+            animateFeatureItems();
+
+            // Check and start animation when the page is scrolled
+            function checkScroll() {
+                if (isElementInViewport(countElement) && currentCount === 0) {
+                 updateCount();
+                    window.removeEventListener('scroll', checkScroll);
+                }
+            }
+
+            //animation for logo description and our mission section (down -> up)
+            window.addEventListener('scroll', function() {
+                animateUpElements.forEach(function(element) {
+                    if (isInViewport(element)) {
+                        element.classList.add('animate');
+                    }
+                });
+            });
+
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Initial checking
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Southeast Asia</title>
+        <link rel="stylesheet" href="css/region_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <section class="region-heading">
+            <video autoplay loop muted plays-inline class="region-heading-video">
+                <source src="videos/southeastasia.mp4" type="video/mp4">
+            </video>
+            <div class="region-heading-video-shadow"></div>
+            <div class="region-heading-content">
+                <h1>Southeast<br> Asia</h1>
+                <p>
+                    Welcome to Southeast Asia! Dive into a burst of flavors from Thailand, Vietnam,<br>
+                    Malaysia, Singapore, and Indonesia. Savor the rich spices, aromatic<br>
+                    herbs, and fresh ingredients in every mouthwatering curry, fragrant<br>
+                    noodle dish, and zesty street food creation.<br>
+                    Taste the adventure!
+                </p>
+            </div>
+        </section>
+
+        <section class="region_body_eastasia" 
+                style="background-image:linear-gradient(180deg, 
+                hsl(0, 0%, 0%) 0%, 
+                hsla(0, 0%, 0%, 0) 120%),
+                linear-gradient(180deg,
+                hsla(0, 0%, 0%, 0) 0%,
+                hsl(0, 0%, 0%) 85%),
+                url(pictures/ornategoldenstatues.jpg);"> 
+            <div class="fun-facts">
+                <div class="sichuan" 
+                    style="background-image:linear-gradient(180deg,
+                                            hsla(0,0%,0%,0)0%,
+                                            hsl(0, 0%, 0%)80%), 
+                                            url(pictures/greencurry_cover.jpg);">
+                    <h1>Why Green,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kaaaaaaaa?</h1>
+                    <p>
+                        <b>Green curry</b> is a spicy Thai dish made with a green curry 
+                        paste, which blends green chilies, garlic, lemongrass, and 
+                        other aromatic herbs. The curry is simmered with coconut milk, 
+                        creating a creamy, spicy sauce that's both fragrant and flavorful.
+                    </p>
+                </div>
+                <div class="boba">
+                    <h1>Malaysian Roti Revelry:</h1>
+                    <div class="boba-content">
+                        <img src="pictures/roticanai.jpg" alt="Roti Canai">
+                        <div class="boba-content-desc">
+                            <h3>Pick Your Perfect Roti!</h3>
+                            <div class="boba-selector">
+                                <ul>
+                                    <li><a href="rotitelurbawang.html">Roti telur bawang</a></li>
+                                    <li><a href="rotijepun.html">Roti Jepun</a></li>
+                                    <li><a href="rotitisu.html">Roti tisu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="taste-the-trend">
+                <h1>Taste the Trend</h1>
+                <div class="taste-the-trend-content">
+                    <img src="pictures/nasiayampenyet.jpg" alt="Nasi Ayam Penyet">
+                    <div class="taste-the-trend-desc">
+                        <h3>Nasi Ayam Penyet</h3>
+                        <p>
+                            An Indonesian dish with crispy, smashed fried chicken 
+                            served with spicy sambal, steamed rice, and often accompanied
+                             by fresh vegetables and fried tofu or tempeh.
+                        </p>
+                        <button class="taste-the-trend-button">
+                            See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="taste-the-trend-content">
+                    <img src="pictures/ubehalayajam.jpg" alt="Ube Halaya Jam">
+                    <div class="taste-the-trend-desc">
+                        <h3>Ube Halaya Jam</h3>
+                        <p>
+                            A Filipino sweet treat made from creamy purple yam, known 
+                            for its rich flavor and vibrant color. It’s commonly used as 
+                            a topping or filling in desserts like cakes, pastries, and ice cream.
+                        </p>
+                        <button class="taste-the-trend-button">
+                            See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="taste-the-trend-content">
+                    <img src="pictures/banhmisandwich.jpg" alt="Banh Mi Sandwich">
+                    <div class="taste-the-trend-desc">
+                        <h3>Banh Mi Sandwich</h3>
+                        <p>
+                            A Vietnamese baguette filled with marinated 
+                            meat, pickled vegetables, fresh herbs, and pâté or mayo, creating 
+                            a deliciously crunchy and tangy bite.
+                        </p>
+                        <button class="taste-the-trend-button">
+                            See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="region-shadow">
+            <h1>Yummy Gallery</h1>
+            <br>
+            <div class="food-filter">
+                <button class="active" data-name="all">All</button>
+                <button data-name="indonesia">Indonesia</button>
+                <button data-name="malaysia">Malaysia</button>
+                <button data-name="philippines">Philippines</button>
+                <button data-name="singapore">Singapore</button>
+                <button data-name="thailand">Thailand</button>
+                <button data-name="vietnam">Vietnam</button>
+             </div>
+        </div>
+
+        <section class="food-gallery">
+            <div class="food-item" data-name="thailand">
+                <img src="pictures/tomyum.jpg" alt="Tom Yum" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/thailand.png" alt="Thailand Flag Icon" class="flagIcon">
+                            <span class="countryName">Thailand</span>
+                        </span>
+                        <h2>Tom Yum</h2>
+                    </div>
+                    <p>like a spicy wake-up call for your taste buds—tangy, 
+                        hot broth brimming with fresh herbs, shrimp, and mushrooms 
+                        that’ll warm you up and keep you coming back for more!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="food-item" data-name="indonesia">
+                <img src="pictures/rendang.jpg" alt="Rendang" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/indonesia.png" alt="Indonesia Flag Icon" class="flagIcon">
+                            <span class="countryName">Indonesia</span>
+                        </span>
+                        <h2>Rendang</h2>
+                    </div>
+                    <p>like a rich, spicy hug—tender beef simmered slowly in 
+                        a fragrant, coconut milk curry that's packed with deep, 
+                        bold flavors that make every bite a comforting adventure!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="food-item" data-name="malaysia">
+                <img src="pictures/charkwayteow.jpg" alt="Penang Char Kway Teow" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/malaysia.png" alt="Malaysia Flag Icon" class="flagIcon">
+                            <span class="countryName">Malaysia</span>
+                        </span>
+                        <h2>Penang Char Kway Teow</h2>
+                    </div>
+                    <p> like a sizzling dance party in mouth—stir-fried 
+                        flat noodles with shrimp, Chinese sausage, and bean sprouts, 
+                        all tossed in a savory sauce that makes each bite a flavorful 
+                        celebration!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="food-item" data-name="vietnam">
+                <img src="pictures/goicuon.jpg" alt="Goi Cuon" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/vietnam.png" alt="Vietnam Flag Icon" class="flagIcon">
+                            <span class="countryName">Vietnam</span>
+                        </span>
+                        <h2>Goi Cuon</h2>
+                    </div>
+                    <p> like a fresh, crunchy party roll—rice paper wraps filled with 
+                        shrimp, herbs, and veggies, dipped in a tangy peanut or hoisin 
+                        sauce that makes every bite a delightful burst of flavor!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="food-item" data-name="singapore">
+                <img src="pictures/chilicrab.jpg" alt="Chili Crab" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/singapore.png" alt="Singapore Icon" class="flagIcon">
+                            <span class="countryName">Singapore</span>
+                        </span>
+                        <h2>Chili Crab</h2>
+                    </div>
+                    <p>like a spicy, saucy seafood fiesta—crab cooked in a tangy, 
+                        fiery tomato-based sauce that’ll have you cracking shells and 
+                        savoring every messy bite!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="food-item" data-name="philippines">
+                <img src="pictures/adobo.jpg" alt="Chicken Adobo" class="food-image">
+                <div class="food-description">
+                    <div class="flagIcon-foodName">
+                        <span class="flagIcon-countryName">
+                            <img src="pictures/flag/philippines.png" alt="Philippines Flag Icon" class="flagIcon">
+                            <span class="countryName">Philippines</span>
+                        </span>
+                        <h2>Chicken Adobo</h2>
+                    </div>
+                    <p>like a flavorful symphony in a pot—tender chicken simmered in a 
+                        zesty mix of soy sauce, vinegar, and spices, delivering a 
+                        tangy and savory experience with every bite!</p>
+                    <button class="food-gallery-button">
+                        See more&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <script src="javascript/region.js"></script>
+
+    </body>
+</html>
