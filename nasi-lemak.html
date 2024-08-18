@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Recipe - Eatopia</title>
+        <title>Eatopia</title>
+        <link rel="stylesheet" href="css/login-signup.css">
         <link type="text/css" rel="stylesheet" href="css/header-footer.css">
         <link type="text/css" rel="stylesheet" href="css/recipe-layout.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,24 +20,84 @@
                 <div class="logo">
                     <a href="/"><img src="pictures/logo.png" alt="Eatopia logo" height="40"></a>
                 </div>
-                <div class="log-in">
+                <div class="account-info">
                     <span>Log in</span>
                     <img src="pictures/profile_logo.png" height="20" width="20" alt="profile_logo">
                 </div>
             </header>
+
+            <div class="sign-up-log-in-container">
+                <div class="sign-up-log-in">
+                    <div class="sign-up">
+                        <form>
+                            <h1>Sign Up</h1>
+                            <div class="icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                            </div>
+                            <span>or use email for registration</span>
+                            <input type="text" placeholder="Name" maxlength="12"/>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password"/>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="sign-in">
+                        <form>
+                            <h1>Sign In</h1>
+                            <div class="icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                            </div>
+                            <span>or use email and password</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password"/>
+                            <a href="#">Forget Password</a>
+                            <button type="submit">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="toggle-container">
+                        <div class="toggle">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Welcome, my friend!</h1>
+                                <p>If you already have an account</p>
+                                <button class="hidden" id="login">Sign In</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Welcome Foodie!</h1>
+                                <p>If you don't have an account</p>
+                                <button class="hidden" id="register">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <nav>
                 <ul>
-                    <li><a>Recipes</a></li>
-                    <li><a>World Cuisines</a></li>
-                    <li><a>Search Map</a></li>
-                    <li><a>Community</a></li>
-                    <li><a>Calendar</a></li>
-                    <li><a>Restaurants</a></li>
-                    <li><a>About Us</a></li>
+                    <li class="world-cuisines">World Cuisines&nbsp;<i class="fa-solid fa-angle-down"></i>
+                        <div class="drop-down-menu">
+                            <ul class="world-cuisines-drop-down">
+                                <li><a href="Southeast-Asia.html">South-East Asian Cuisines</a></li>
+                                <li><a href="East-Asia.html">East Asian Cuisines</a></li>
+                                <li><a href="Europe.html">European Cuisines</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="globe.html">Explore Globe</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="collection.html">Collections</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
                 </ul>
+                
             </nav>
         </div>
+
+        <i id="back-to-top" class="fa-solid fa-circle-chevron-up"></i>
 
         <section>
             <div class="food-media-container">
@@ -53,6 +114,11 @@
             </div>
             <div class="food-container">
                 <div class="food-title">
+                    <button class="favorite-btn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
                     <h1>Nasi Lemak</h1>
                     <p>Malaysia Fat Rice</p>
                 </div>
@@ -107,7 +173,7 @@
                     </div>
 
                     <div class="food-ingredients-container">
-                        <h1>Ingredients</h1>
+                        <h1>Main Ingredients</h1>
                         <div class="food-ingredients">
                             <div>
                                 <img src="pictures/pandan-leaf.png" width="100" alt="Pandan Leaf" class="ingredient-image">
@@ -198,6 +264,9 @@
                     </div>
                     <div class="intructions">
                         <h1>Instructions</h1>
+                        <video class="instruction-video" controls poster="pictures/nasi-lemak-thumbnail.jpg">
+                            <source src="videos/nasi-lemak-instruction.mp4" type="video/mp4"/>
+                        </video>
                         <div class="step">
                             <div>
                                 <h1>Step 1</h1>
@@ -310,7 +379,7 @@
             <div class="footer-top">
                 <div class="footer-left">
                     <div class="footer-logo">
-                        <img src="pictures/logo.png" height="70">
+                        <a href="index.html"><img src="pictures/logo-white.png" height="70"></a>
                     </div>
                     <p class="footer-slogan">Your Passport to Flavourful Adventure</p>
                     <div class="subscription-form">
@@ -321,30 +390,29 @@
                         </form>
                     </div>
                     <div class="social-media-icons">
-                        <img src="pictures/whatsapp-icon.png" width="40" alt="Whatsapp" id="Whatsapp">
-                        <img src="pictures/facebook-icon.png" width="40" alt="Facebook" id="Facebook">
-                        <img src="pictures/instagram-icon.png" width="40" alt="Instagram" id="Instagram">
-                        <img src="pictures/youtube-icon.png" width="40" alt="YouTube" id="YouTube">
-                        <img src="pictures/X-icon.png" width="40" alt="X" id="X">
+                        <a href="https://www.whatsapp.com/download"><img src="pictures/whatsapp-icon.png" width="40" alt="Whatsapp" id="Whatsapp"></a>
+                        <a href="https://www.facebook.com/"><img src="pictures/facebook-icon.png" width="40" alt="Facebook" id="Facebook"></a>
+                        <a href="https://www.instagram.com/"><img src="pictures/instagram-icon.png" width="40" alt="Instagram" id="Instagram"></a>
+                        <a href="https://www.youtube.com/"><img src="pictures/youtube-icon.png" width="40" alt="YouTube" id="YouTube"></a>
+                        <a href="https://x.com/"><img src="pictures/X-icon.png" width="40" alt="X" id="X"></a>
                     </div>
                 </div>
                 
                 <div class="footer-right">
                     <div class="pages-link">
                         <ul>
-                            <li>Recipes</li>
-                            <li>World Cuisines</li>
-                            <li>Map</li>
-                            <li>Community</li>
-                            <li>Calendar</li>
-                            <li>Restaurants</li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="globe.html">Explore Globe</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="collection.html">Collections</a></li>
                         </ul>
                     </div>
                     <div class="website-info-list">
                         <ul>
-                            <li>About Us</li>
-                            <li>Terms of Service</li>
-                            <li>Contact</li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="aboutUs.html#features">Features</a></li>
+                            <li><a href="contactUs.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -356,7 +424,9 @@
             
         </footer>
 
-        <script src="javascript/recipe-layout.js"></script>
+        <script src="javascript/login-signup.js"></script>
         <script src="javascript/header-footer.js"></script>
+        <script src="javascript/recipe-layout.js"></script>
+        <script src="javascript/save-recipe.js"></script>
     </body>
 </html>

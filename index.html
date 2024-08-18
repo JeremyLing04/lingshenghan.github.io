@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Eatopia - Explore World Cuisines</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cookie.css">
         <link rel="stylesheet" href="css/login-signup.css">
-        <link type="text/css" rel="stylesheet" href="css/index.css">
         <link type="text/css" rel="stylesheet" href="css/header-footer.css">
+        <link type="text/css" rel="stylesheet" href="css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
@@ -17,6 +16,20 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
+        <div id="cookies">
+            <div class="cookies-content">
+                <div class="cookies-message">
+                    <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                </div>
+                <div class="cookies-buttons">
+                    <button id="cookies-accept-btn">That's fine!</button>
+                    <button id="cookies-reject-btn">Reject</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="javascript/cookies.js"></script>
+
         <div class="sticky-header">
             <header>
                 <div class="logo">
@@ -233,135 +246,92 @@
                         </div>
                         <div class="rank-item">
                             <h1 class="rank-number">Rank <span style="font-size:larger;">#2</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <img src="pictures/tacos.jpg" alt="tacos">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/mexico.png" width="20" height="20" alt="Mexico">
+                                    <h2>Tacos</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling such as beef, chicken, or vegetables.</p>
+                                <a class="recipe-link" href="tacos.html">Show More</a>
                             </div>
                         </div>
+                        
                         <div class="rank-item">
                             <h1 class="rank-number">Rank <span style="font-size:larger;">#3</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <img src="pictures/pasta.jpg" alt="pasta">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/italy.png" width="20" height="20" alt="Italy">
+                                    <h2>Pasta</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Italian staple food made from unleavened dough of wheat flour mixed with water or eggs, and formed into various shapes.</p>
+                                <a class="recipe-link" href="pasta.html">Show More</a>
                             </div>
                         </div>
+                        
                         <div class="rank-item">
                             <h1 class="rank-number">Rank <span style="font-size:larger;">#4</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <img src="pictures/pad-thai.jpg" alt="pad-thai">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/thailand.png" width="20" height="20" alt="Thailand">
+                                    <h2>Pad Thai</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Popular Thai stir-fried rice noodle dish commonly served with shrimp, tofu, or chicken, and garnished with peanuts and lime.</p>
+                                <a class="recipe-link" href="pad-thai.html">Show More</a>
                             </div>
                         </div>
-    
+                        
                         <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#1</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <h1 class="rank-number">Rank <span style="font-size:larger;">#5</span></h1>
+                            <img src="pictures/biryani.jpg" alt="biryani">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/india.png" width="20" height="20" alt="India">
+                                    <h2>Biryani</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Flavorful South Asian rice dish made with fragrant basmati rice, meat or vegetables, and a variety of spices.</p>
+                                <a class="recipe-link" href="biryani.html">Show More</a>
                             </div>
                         </div>
+                        
                         <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#2</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <h1 class="rank-number">Rank <span style="font-size:larger;">#6</span></h1>
+                            <img src="pictures/pizza.jpg" alt="pizza">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/italy.png" width="20" height="20" alt="Italy">
+                                    <h2>Pizza</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Iconic Italian dish featuring a flat round base of dough topped with tomato sauce, cheese, and a variety of toppings.</p>
+                                <a class="recipe-link" href="pizza.html">Show More</a>
                             </div>
                         </div>
+                        
                         <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#3</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <h1 class="rank-number">Rank <span style="font-size:larger;">#7</span></h1>
+                            <img src="pictures/paella.jpg" alt="paella">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/spain.png" width="20" height="20" alt="Spain">
+                                    <h2>Paella</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Traditional Spanish rice dish originally from Valencia, cooked with seafood, meat, and vegetables in a large, shallow pan.</p>
+                                <a class="recipe-link" href="paella.html">Show More</a>
                             </div>
                         </div>
+                        
                         <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#4</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
+                            <h1 class="rank-number">Rank <span style="font-size:larger;">#8</span></h1>
+                            <img src="pictures/pho.jpg" alt="pho">
                             <div class="rank-food-description">
                                 <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
+                                    <img src="pictures/vietnam.png" width="20" height="20" alt="Vietnam">
+                                    <h2>Pho</h2>
                                 </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
-                            </div>
-                        </div>
-                        <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#1</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
-                            <div class="rank-food-description">
-                                <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
-                                </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
-                            </div>
-                        </div>
-                        <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#1</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
-                            <div class="rank-food-description">
-                                <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
-                                </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
-                            </div>
-                        </div>
-                        <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#1</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
-                            <div class="rank-food-description">
-                                <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
-                                </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
-                            </div>
-                        </div>
-                        <div class="rank-item">
-                            <h1 class="rank-number">Rank <span style="font-size:larger;">#1</span></h1>
-                            <img src="pictures/baguette.jpg" alt="baguette">
-                            <div class="rank-food-description">
-                                <div>
-                                    <img src="pictures/france.png" width="20" height="20" alt="france">
-                                    <h2>Baguette</h2>
-                                </div>
-                                <p>long, thin loaf of French bread with a crisp crust and soft, airy interior.</p>
-                                <a class="recipe-link">Show More</a>
+                                <p>Vietnamese soup consisting of broth, rice noodles, herbs, and meat, usually beef or chicken.</p>
+                                <a class="recipe-link" href="pho.html">Show More</a>
                             </div>
                         </div>
                     </div>
