@@ -68,3 +68,21 @@ recipeBtn.addEventListener('click', () => {
     document.querySelector('.overview-content').classList.add('hide');
     document.querySelector('.recipe-content').classList.remove('hide');
 });
+
+// Select all the ingredient images
+const ingredientImages = document.querySelectorAll('.ingredient-image');
+
+// Loop through each image and add event listeners for 'mouseover' and 'mouseout' events
+ingredientImages.forEach(image => {
+    // Enlarge image on hover
+    image.addEventListener('mouseover', () => {
+        image.style.transform = 'scale(1.2)';
+        image.style.transition = 'transform 0.3s ease';
+    });
+
+    // Return image to original size when hover ends
+    image.addEventListener('mouseout', () => {
+        image.style.transform = 'scale(1)';
+        image.style.transition = 'transform 0.3s ease';
+    });
+});
