@@ -5,22 +5,13 @@ body {
     margin: 0 auto;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
 
 .main{
-    width: 80%; /* 你可以根据需要调整宽度 */
-    margin: 0 auto; /* 自动水平居中 */
+    width: 80%; 
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* 垂直居中内部内容 */
+    align-items: center; 
     justify-content: center;
     padding: 60px;
 }

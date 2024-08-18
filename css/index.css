@@ -1,4 +1,5 @@
 .search-container {
+    max-width: 100%;
     background-image: linear-gradient(180deg, rgba(41, 41, 41, .45) 22.89%, rgba(0, 0, 0, .52) 70.74%), url(../pictures/world-map-cuisine.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,6 +9,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .search-container > div {
@@ -46,7 +48,7 @@
     color: rgba(0, 0, 0, .52);
 }
 
-.explore-globe:link {
+.explore-globe {
     color: white;
     border: 2px solid white;
     font-size: 20px;

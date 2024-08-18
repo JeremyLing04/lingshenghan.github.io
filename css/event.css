@@ -1,6 +1,23 @@
 @import url('//db.onlinewebfonts.com/c/b46bb1fc76216f5cd90457d0451dbee4?family=Futura+Book');
 @import url('//db.onlinewebfonts.com/c/9a1626276b430d216809407c3fbcda75?family=Futura-Bold');
 
+.calendar {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 20px; 
+    margin: 0px 0px 50px 0px;
+}
+
+.calendar iframe {
+    width: 80%; 
+    max-width: 700px; 
+    height: 500px; 
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
 .event-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 500px));
@@ -15,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 70px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 0px 0px 50px 0px;
 }
 

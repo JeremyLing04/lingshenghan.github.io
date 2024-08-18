@@ -4,9 +4,12 @@ body {
     overflow-x: hidden;
 }
 
-a:link, a:visited{
-    text-decoration: none;
-    color: black;
+a {
+    text-decoration: none;  
+}
+
+nav a:link, nav a:visited{
+    color:black;
 }
 
 /*header*/
@@ -16,7 +19,7 @@ a:link, a:visited{
     top: 0;
     z-index: 10;
     height: 120px;
-    width: 100%;
+    width: 100vw;
     background: aliceblue;
     padding-top: 20px;
     transition: transform 0.2s linear;

@@ -44,14 +44,14 @@ section{
 
 .food-media-container .left-button, .food-media-container .right-button{
     position: absolute;
-    font-size: 40px;
+    font-size: 50px;
     z-index: 2;
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
     background-color: #dddddd62;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s;
 }
 
 .food-media-container .left-button{
@@ -101,6 +101,10 @@ section{
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+}
+
+.content-navigation li:hover {
+    background-color: rgba(250, 235, 215, 0.534);
 }
 
 .content-navigation li.selected {
@@ -200,6 +204,7 @@ section{
 .ingredient-table tr{
     height: 30px;
     border-bottom: 0px solid;
+    font-size: 18px;
 }
 
 .ingredient-table tr td:nth-of-type(1) {
@@ -208,6 +213,13 @@ section{
 
 .ingredient-table th {
     padding-left: 5px;
+}
+
+.instruction-video {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    outline: 2px dotted #333;
 }
 
 .step {
@@ -247,4 +259,34 @@ section{
 .notes li{
     font-size: 18px;
     padding: 10px 0;
+}
+
+/*Favorite button style */
+.favorite-btn {
+    padding: 0px 0px 0px 750px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+}
+
+/*Heart icon style */
+.favorite-btn svg {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+/* Activated heart icon */
+.favorite-btn.active svg {
+    fill: red;
+    animation: heart-beat 0.3s ease-in-out;
+}
+
+/* Heart beating animation */
+@keyframes heart-beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
 }

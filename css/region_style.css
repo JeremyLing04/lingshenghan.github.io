@@ -1,9 +1,15 @@
-*{
-    color:white;
-}
+
 body {
     padding: 0;
     margin: 0;
+}
+
+section {
+    color:white;
+}
+
+section a:link {
+    color: white;
 }
 @keyframes showcontent{
     from{
@@ -258,7 +264,23 @@ body {
 .food-item{
     flex-basis:370px;
     background:none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
+
+.food-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .food-image{
     width:80%;
     height:auto;

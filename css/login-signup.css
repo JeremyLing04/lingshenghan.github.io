@@ -62,6 +62,7 @@
 
 .sign-up-log-in .icons {
     margin: 20px 0;
+    display: flex; 
 }
 
 .sign-up-log-in .icons .icon {

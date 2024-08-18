@@ -8,16 +8,10 @@ main {
     color: #333;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+}
+
+.main ul{
+    padding-left: 20px;
 }
   
 h1 {
@@ -40,9 +34,6 @@ ul {
 }
 
 /*About Eatopia*/
-#aboutEatopia{
-    margin:50px 0px 0px 0px;
-}
 
 .aboutEatopia-container{
     background-image: url('../pictures/banner.jpg');
@@ -59,11 +50,11 @@ ul {
 
 .aboutEatopia-title{
     font-family: "Futura-Bold";
-    font-size: 30px;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     text-align: right;
     font-weight: bold;
     padding: 0px 0px 300px 30px;
-    display: block;
+    display: inline;
     color: #ffffff; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
@@ -72,7 +63,7 @@ ul {
 .subtitle {
     font-family: "Futura-Bold";
     display: inline;
-    font-size: 40px;
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: bold;
     font-style: italic;
     color: #ffffff; 
@@ -80,12 +71,28 @@ ul {
 }
 
 /*Logo Description*/
+.row {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+  
+.col {
+    flex: 1;
+    padding: 10px; 
+}
+
 #logo-description {
     margin: 0px 0px 0px 100px;
     padding: 50px 0;
 }
 
-.logo-image img {
+.logo-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image-img{
     max-width: 100%;
     height: auto;
 }
@@ -113,7 +120,7 @@ ul {
     padding: 50px 0;
 }
 
-.mission-image img {
+.mission-image .mission-image-img{
     max-width: 100%;
     height: auto;
 }
@@ -145,6 +152,7 @@ ul {
 }
 
 .feature-title{
+    font-size: 32px;
     font-weight: bold;
     margin: 0px 0px 30px 0px;
 }
@@ -161,8 +169,8 @@ ul {
     opacity: 0;
     transition: all 1.5s ease;
 }
-.feature-item p{
-    font-size: 22px;
+.feature-item > p{
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .feature-item h2{
@@ -186,7 +194,7 @@ ul {
 
 .feature-number {
     font-family: "Futura-Bold";
-    font-size: 3em;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: bold;
     color: #333;
     display: block;
@@ -314,6 +322,16 @@ ul {
     transform: scale(0.96);
 }
 
+/*bootstrap*/
+.col-md-5{
+    position:relative;
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    -ms-flex:0 0 41.666667%;
+    flex:0 0 41.666667%;
+    max-width:41.666667%
+}
 
 /*Animation*/
 .animate-up {

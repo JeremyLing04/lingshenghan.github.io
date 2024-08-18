@@ -2,7 +2,7 @@ body {
     position: relative;
     padding: 0;
     margin: 0 10px 50px 10px;
-    background-color: #ddd;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../pictures/food-dotted-bg.jpg');
 }
 
 .restaurant-heading-container {
@@ -20,6 +20,7 @@ body {
     border: 2px solid #72544b;
     padding: 0 50px;
     border-radius: 20px;
+    background-color: beige;
 }
 .small-title{
     font-family: 'Italiana', sans-serif;
@@ -38,6 +39,7 @@ body {
     gap:50px;
     padding:0 10% 0 10%;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .restaurant-card{
     max-width: 350px;
@@ -45,6 +47,8 @@ body {
     box-shadow:8px 8px 8px rgba(0, 0, 0, 0.529);
     overflow: hidden;
 }
+
+
 .restaurant-image {
     width: 350px;
     height: 250px;
@@ -119,7 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color:#ffffffd1;
+    background-color:#ffffff;
 }
 .restaurant-name{
     font-family: 'Italiana', sans-serif;
